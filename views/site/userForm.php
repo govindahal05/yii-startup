@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 if(Yii::$app->session->hasFlash('success')){
-	echo yii::$app->session->getFlash('success');
+	echo "<div class='alert alert-success'>".yii::$app->session->getFlash('success')."</div>";
 }
 
 $form = ActiveForm:: begin();
